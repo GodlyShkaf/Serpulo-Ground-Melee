@@ -1,0 +1,9 @@
+{
+    "name": "sgm",
+    "displayName": "Serpulo Melee units",
+    "author": "Crazypumpkinserge",
+    "description": "New branch of melee Serpulo units",
+    "Version":136,
+    "minGameVersion": 136,
+    "hidden": false
+}
