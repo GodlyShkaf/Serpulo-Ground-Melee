@@ -1,0 +1,88 @@
+name: Laceration
+description: Saws through close up enemies like butter and helps itself with flamethrowers
+immunities: [tarred, burning, melting]
+health: 8500
+flying: false
+rotateSpeed: 1.7
+armor: 12
+speed: 0.55
+accel: 0.4
+drag: 0.2
+hitSize: 43
+type: legs
+legCount: 5
+legGroupSize: 1
+legLength: 42
+legLengthScl: 0.5
+legContinuousMove: false
+legForwardScl: 0.2
+legSplashDamage: 50
+legSplashRange: 20
+allowLegStep: false
+lockLegBase: true
+weapons: [
+{
+name: chainsaw
+continuous: true
+shootSound: laser
+shootSoundPitch: 0.1
+y: 15
+reload: 60
+mirror: true
+alternate: false
+shootY: 4
+x: 15
+shootCone: 45
+predictTarget: false
+bullet: {
+sprite: sgm-chainsaw-saw
+type: ContinuousLaserBulletType
+width: 5
+heigth: 24
+length: 24
+continuous: true
+lifetime: 70
+shootEffect: shootSmall
+hitEffect: {
+type: ExplosionEffect
+smokes: 5
+waveRad: 1
+sparks: 2
+sparkRad: 50
+sparkStroke: 2
+sparkLen: 10
+sparkColor: ffd280
+}
+despawnEffect: none
+damage: 11
+pierce: true
+pierceBuilding: true
+reflectable: false
+absorbable: false
+}
+}
+{
+x: 6
+y: 4
+reload: 3
+predictTarget: false
+shootSound: flame
+shootCone: 135
+bullet: {
+lifetime: 30
+width: 0
+height: 0
+damage: 35
+status: burning
+hitSize: 25
+speed: 2
+shootEffect: shootPyraFlame
+hitEffect: none
+despawnEffect: none
+absorbable: false
+reflectable: false
+pierce: true
+pierceBuilding: true
+}
+}
+]

@@ -1,0 +1,61 @@
+name: Chase
+description: Bites close up units, long reload, very high damage and slowdown effect
+health: 1450
+flying: false
+armor: 5
+speed: 0.65
+accel: 0.11
+drag: 0.1
+hitSize: 32
+type: legs
+legCount: 8
+legGroupSize: 1
+legLength: 35
+legLengthScl: 0.5
+legContinuousMove: false
+legForwardScl: 6
+legSplashDamage: 16
+legSplashRange: 10
+allowLegStep: false
+lockLegBase: true
+weapons: [{
+name: ccc130-hit
+shootSound: bang
+y: 5
+reload: 210
+recoil: -11
+recoilTime: 70
+mirror: false
+x: 0
+parts: [
+{
+suffix: "-jaws"
+under: true
+top:false
+progress: recoil
+mirror: true
+moveRot: 92
+moveX: -8
+moveY: 4
+x: 15
+y: 3
+}
+]
+bullet: {
+hitSize: 50
+status: unmoving
+statusDuration: 20
+width: 50
+heigth: 2
+speed: 4
+lifetime: 7
+shootEffect: none
+damage: 450
+knockback: -1
+impact: true
+pierce: true
+pierceBuilding: true
+reflectable: false
+absorbable: false
+}
+}]

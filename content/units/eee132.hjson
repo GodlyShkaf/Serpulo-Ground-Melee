@@ -1,0 +1,132 @@
+name: Destructuring
+description: Pierces enemies with two long plasma beams and sprays burning oil
+immunities: [tarred, burning, melting]
+health: 25350
+flying: false
+rotateSpeed: 0.8
+armor: 20
+speed: 0.35
+accel: 0.6
+drag: 0.4
+hitSize: 53
+type: legs
+legCount: 2
+legGroupSize: 1
+legLength: 60
+legLengthScl: 0.2
+legContinuousMove: false
+legForwardScl: 0
+legSplashDamage: 150
+legSplashRange: 20
+allowLegStep: false
+lockLegBase: false
+weapons: [
+{
+name: eee132-gun
+continuous: true
+alwaysContinuous: true
+shootSound: beam
+shootSoundPitch: 0.1
+rotationLimit: 38
+rotate: true
+rotateSpeed: 1
+y: 0
+reload: 60
+mirror: true
+alternate: false
+shootY: 0
+x: 8
+shootX: 8
+shootY: 17
+recoil: 6
+recoilTime: 120
+shootCone: 45
+predictTarget: false
+bullet: {
+sprite: sgm-chainsaw-saw
+type: ContinuousFlameBulletType
+colors: [d16d54, ffa866, ffd280, bd95fc]
+width: 2
+height: 64
+length: 64
+continuous: true
+lifetime: 70
+shootEffect: shootPyraFlame
+hitEffect: {
+type: ExplosionEffect
+smokes: 5
+smokeRad: 60
+waveRad: 1
+sparks: 1
+sparkRad: 80
+sparkStroke: 4
+sparkLen: 25
+sparkColor: ffd280
+}
+despawnEffect: none
+damage: 7
+pierce: true
+pierceBuilding: true
+reflectable: false
+absorbable: false
+}
+}
+{
+x: 3
+y: 4
+mirror: false
+reload: 3
+predictTarget: false
+shootSound: flame
+shootCone: 135
+bullet: {
+lifetime: 40
+type: LiquidBulletType
+liquid: oil
+width: 0
+height: 0
+damage: 5
+despawnHit: true
+status: burning
+statusDuration: 90
+hitSize: 25
+speed: 2
+shootEffect: shootPyraFlame
+hitEffect: none
+despawnEffect: hitFlameSmall
+absorbable: false
+reflectable: false
+pierce: true
+pierceBuilding: true
+}
+}
+{
+x: -3
+y: 4
+mirror: false
+reload: 3
+predictTarget: false
+shootSound: flame
+shootCone: 135
+bullet: {
+lifetime: 40
+type: LiquidBulletType
+liquid: slag
+width: 0
+height: 0
+damage: 5
+despawnHit: true
+status: burning
+statusDuration: 90
+hitSize: 25
+speed: 2
+shootEffect: shootPyraFlame
+hitEffect: none
+despawnEffect: hitFlameSmall
+absorbable: false
+reflectable: false
+pierce: true
+pierceBuilding: true
+}
+}
+]

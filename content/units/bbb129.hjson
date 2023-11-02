@@ -1,0 +1,44 @@
+name: Raid
+description: Hits close up enemies with wide metal plate
+Health: 510
+flying: false
+armor: 4
+speed: 0.4
+accel: 0.2
+drag: 0.1
+hitSize: 21
+type: legs
+legCount: 3
+legGroupSize: 1
+legLength: 23
+legLengthScl: 0.6
+legContinuousMove: true
+legForwardScl: 0.35
+legSplashDamage: 10
+legSplashRange: 10
+allowLegStep: false
+lockLegBase: true
+weapons: [{
+name: bbb129-hit
+reload: 60
+recoil: -6
+recoilTime: 50
+mirror: false
+x: 0
+bullet: {
+sprite: sgm-bbb129-hit
+hitSize: 20
+width: 20
+heigth: 20
+speed: 1.5
+lifetime: 10
+shootEffect: none
+damage: 95
+knockback: 4
+impact: true
+pierce: true
+pierceBuilding: true
+reflectable: false
+absorbable: false
+}
+}]

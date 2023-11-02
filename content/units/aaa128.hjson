@@ -1,0 +1,37 @@
+name: Rush
+description: Hits close up units with fists'o steel
+health: 215
+flying: false
+armor: 3
+speed: 0.7
+hitSize: 13
+type: legs
+legCount: 2
+legLength: 12
+legLengthScl: 0.1
+LegContinuousMove: true
+allowLegStep: false
+flying: false
+accel: 0.1
+drag: 0.06
+weapons: [{
+name: aaa128-hit
+recoil: -5
+recoilTime: 20
+reload: 22
+x: 5
+bullet: {
+damage: 40
+hitSize: 7
+width: 10
+height: 10
+speed: 2
+lifetime: 6
+shootEffect: none
+pierce: true
+pierceBuilding: true
+sprite: sgm-aaa128-hit
+reflectable: false
+absorbable: false
+}
+}]
